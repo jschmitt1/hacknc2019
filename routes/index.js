@@ -10,6 +10,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.post('/predict', function(req, res) {
+  console.log(typeof(req.body.card1));
   let options = {
     mode: 'text',
     pythonPath: '/usr/bin/python3.7',
@@ -17,7 +18,7 @@ router.post('/predict', function(req, res) {
     scriptPath: '/opt/bitnami/apps/hacknc2019/routes',
     args: [req.body.card1, req.body.card2]
   };
-  console.log(req);
+  
   ps.PythonShell.run('test.py', options, function (err, results) {
     if (err) throw err;
     console.log('finished');
