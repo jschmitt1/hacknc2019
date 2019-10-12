@@ -6,7 +6,7 @@ let options = {
   mode: 'text',
   pythonPath: '/usr/bin/python3',
   pythonOptions: ['-u'], // get print results in real-time
-  scriptPath: '/test.py',
+  scriptPath: '/',
   args: ['value1', 'value2']
 };
 
@@ -17,7 +17,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.post('/predict', function(req, res) {
-  ps.PythonShell.run('hello.py', options, function (err, results) {
+  ps.PythonShell.run('test.py', options, function (err, results) {
     if (err) throw err;
     console.log('finished');
     console.log(results);
