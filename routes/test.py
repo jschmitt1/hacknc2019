@@ -35,6 +35,6 @@ df['C12'] = [0.0]
 
 
 
-df['prediction'] = model.predict(df)
+df['prediction'] = model.predict(df)[:,1]
 
 print("hello world " + df['prediction'])
