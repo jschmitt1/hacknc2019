@@ -1,6 +1,14 @@
 var express = require('express');
 var router = express.Router();
+const ps = require('python-shell');
 
+let options = {
+  mode: 'text',
+  pythonPath: '/usr/bin/python3',
+  pythonOptions: ['-u'], // get print results in real-time
+  scriptPath: '/test.py',
+  args: ['value1', 'value2']
+};
 
 
 /* GET home page. */
@@ -9,11 +17,12 @@ router.get('/', function(req, res, next) {
 });
 
 router.post('/predict', function(req, res) {
-  var spawn = require("child_process").spawn;
-  var process = spawn('python',["./hello.py"]);
-  process.stdout.on('data', function(data) { 
-    res.send(data.toString()); 
-  }) 
+  ps.PythonShell.run('hello.py', options, function (err, results) {
+    if (err) throw err;
+    console.log('finished');
+    console.log(results);
+    res.send(results);
+ });
 });
 
 module.exports = router;
