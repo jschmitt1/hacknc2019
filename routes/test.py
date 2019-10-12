@@ -65,4 +65,4 @@ df['card2'] = [float(sys.argv[2])]
 
 somfin = model.predict(df)
 
-print(somfin + sys.argv[1])
+print(somfin)
