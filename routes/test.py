@@ -35,6 +35,6 @@ df['C12'] = [0.0]
 
 
 
-df['prediction'] = model.predict(df)[:,1]
+somfin = model.predict(df)
 
-print("hello world " + df['prediction'])
+print(somfin)
