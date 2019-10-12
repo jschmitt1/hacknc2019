@@ -16,7 +16,7 @@ router.post('/predict', function(req, res) {
     pythonPath: '/usr/bin/python3.7',
     pythonOptions: ['-u'], // get print results in real-time
     scriptPath: '/opt/bitnami/apps/hacknc2019/routes',
-    args: [req.body.card1, req.body.card2]
+    args: [req.body.card1.toString(), req.body.card2.toString()]
   };
   
   ps.PythonShell.run('test.py', options, function (err, results) {
