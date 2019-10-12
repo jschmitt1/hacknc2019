@@ -4,4 +4,37 @@ import lightgbm as lgb
 
 model = lgb.Booster(model_file='/opt/bitnami/apps/hacknc2019/routes/fraud-model.txt')
 
-print("hello world " + sys.argv[1])
+df = pd.DataFrame()
+df['card1'] = [2755]
+df['card2'] = [404.0]
+df['card3'] = [150.0]
+df['card5'] = [102.0]
+df['TransactionAmt'] = [29.0]
+df['TransactionDT'] = [86401]
+df['addr1'] = [325.0]
+df['dist1'] = []
+df['dist2'] = []
+df['D4'] = [0.0]
+df['D2'] = []
+df['D10'] = [0.0]
+df['D8'] = []
+df['D1'] = [0.0]
+df['D9'] = []
+df['C13'] = [1.0]
+df['C1'] = [1.0]
+df['C2'] = [1.0]
+df['C4'] = [0.0]
+df['C5'] = [0.0]
+df['C6'] = [1.0]
+df['C7'] = [0.0]
+df['C8'] = [0.0]
+df['C9'] = [0.0]
+df['C10'] = [0.0]
+df['C11'] = [1.0]
+df['C12'] = [0.0]
+
+
+
+df['prediction'] = model.predict_proba(df)[:,1]
+
+print("hello world " + df['prediction'])
