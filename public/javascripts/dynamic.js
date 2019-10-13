@@ -35,23 +35,7 @@ $(document).ready(function(){
 
         $.post("predict", message, function(result){
             var prediction = (parseFloat(result[0].substring(1).substring(0,result[0].length-2)) * 100).toFixed(2);
-            var currentVal = document.getElementById('prugressBur').value
-            if (currentVal > prediction) {
-                while(document.getElementById('prugressBur').value > prediction) {
-                    setTimeout(function (){
-                        document.getElementById('prugressBur').value = parseFloat(document.getElementById('prugressBur').value) - 0.01;
-                    }, 200);
-                }
-            } else {
-                while(document.getElementById('prugressBur').value < prediction) {
-                    setTimeout(function (){
-
-                        document.getElementById('prugressBur').value = parseFloat(document.getElementById('prugressBur').value) + 0.01;
-                      
-                    }, 200);
-                    
-                }
-            }
+            
             document.getElementById('prugressBur').value = prediction;
           });
 
