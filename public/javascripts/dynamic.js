@@ -206,10 +206,13 @@ $(document).ready(function(){
             document.getElementById('prugressBur').value = prediction;
             if (prediction < 25) {
                 document.getElementById('prugressBur').className = "progress is-success is-large";
+                document.getElementsByName("someName").innerText = "No Fraud Detected"
             } else if (prediction > 75) {
                 document.getElementById('prugressBur').className = "progress is-warning is-large";
+                document.getElementsByName("someName").innerText = "Fraud Detected"
             } else {
                 document.getElementById('prugressBur').className = "progress is-danger is-large";
+                document.getElementsByName("someName").innerText = "Potential Fraud"
             }
             document.getElementById('detectionSubtitle').innerText = `Based on the model, the transaction has an estimated ${prediction}% chance of being fraudulent.`;
             
