@@ -120,7 +120,7 @@
                         Analysis
                 </h1>
                 <h2 class="subtitle has-text-grey" id="testSubtitle">
-                    The data used to create this model came from the IEEE-CIS Fraud Detection Competition on Kaggle.com
+                    The data used to create this model came from the IEEE-CIS Fraud Detection competition on Kaggle.com
                 </h2>
             </div>
             <br>
@@ -143,12 +143,13 @@
             <div class="columns is-multiline justify-center">
                 <div class="column">
                     <div class="box has-background-light is-shadowless">
-                        <p class="title  has-text-centered" id="boxTitle">Engineered Features</p>
+                        <p class="title  has-text-centered" id="boxTitle">Engineered Feature #1</p>
+                        <p2>The possibilities for feature engineering in this dataset were numerous, however hindered by the lack of column labels(due to privacy agreements with the data source's customers). We deduced that TransactionDT is a time variable measured in minutes(86400 is the number of minutes in a day). From this variable, we engineered two additional features: hour of day and day of week. These two features seemed potentially useful in the case that fraudulent activity had some correlation with or clustered around these variables. The variables 'hour' and 'day' to the right correspond to these features. As you can see, both made meaningful contributions to the model(totaling a .09 ROC-AUC score increase).</p2>
                     </div>
                 </div>
                 <div class="column">
                     <div class="box has-background-light is-shadowless">
-                        <p class="title  has-text-centered" id="boxTitle">Engineered Features</p>
+                        <p class="title  has-text-centered" id="boxTitle">Engineered Feature #2</p>
                     </div>
                 </div>
             </div>
