@@ -6,7 +6,7 @@ const ps = require('python-shell');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index.html');
+  res.sendFile(path.join(__dirname + '/index.html'));
 });
 
 router.post('/predict', function(req, res) {
