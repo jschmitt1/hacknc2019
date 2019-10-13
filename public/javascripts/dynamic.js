@@ -1,9 +1,5 @@
 $(document).ready(function(){
-    $("#checked12").onchange(function() {
     const checkbox = document.getElementById("checked12");
-    checkbox.addEventListener('change', (event) => {
-        handleClick();
-    })
     function handleClick() {
         document.getElementById('card1').value = 6019;
         document.getElementById('card2').value = 583;
@@ -36,6 +32,10 @@ $(document).ready(function(){
         document.getElementById('day').value = 2;
         document.getElementById('decimal').value = 0;
     }
+    checkbox.addEventListener('change', (event) => {
+        handleClick();
+    });
+    
     $('#submitButton').click(function(){
         console.log(document.getElementById('checked12').checked);
 
