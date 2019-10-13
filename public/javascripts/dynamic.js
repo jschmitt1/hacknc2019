@@ -38,11 +38,18 @@ $(document).ready(function(){
             var currentVal = document.getElementById('prugressBur').value
             if (currentVal > prediction) {
                 while(document.getElementById('prugressBur').value > prediction) {
-                    document.getElementById('prugressBur').value = parseFloat(document.getElementById('prugressBur').value) - 0.01;
+                    setTimeout(function (){
+                        document.getElementById('prugressBur').value = parseFloat(document.getElementById('prugressBur').value) - 0.01;
+                    }, 200);
                 }
             } else {
                 while(document.getElementById('prugressBur').value < prediction) {
-                    document.getElementById('prugressBur').value = parseFloat(document.getElementById('prugressBur').value) + 0.01;
+                    setTimeout(function (){
+
+                        document.getElementById('prugressBur').value = parseFloat(document.getElementById('prugressBur').value) + 0.01;
+                      
+                    }, 200);
+                    
                 }
             }
             document.getElementById('prugressBur').value = prediction;
