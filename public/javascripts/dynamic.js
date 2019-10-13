@@ -207,7 +207,7 @@ $(document).ready(function(){
             if (prediction < 25) {
                 document.getElementById('prugressBur').className = "progress is-success is-large";
                 document.getElementsByName("someName").innerHTML = "No Fraud Detected"
-            } else if (prediction > 75) {
+            } else if (prediction > 70) {
                 document.getElementById('prugressBur').className = "progress is-warning is-large";
                 document.getElementsByName("someName").innerHTML = "Fraud Detected"
             } else {
