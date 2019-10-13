@@ -34,7 +34,7 @@ $(document).ready(function(){
         }
 
         $.post("predict", message, function(result){
-            console.log(result[0].substring(1).substring(0,result[0].length-1));
+            console.log(result[0].substring(1).substring(0,result[0].length-2));
           });
 
     });
