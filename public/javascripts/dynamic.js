@@ -37,6 +37,14 @@ $(document).ready(function(){
             var prediction = (parseFloat(result[0].substring(1).substring(0,result[0].length-2)) * 100).toFixed(2);
             
             document.getElementById('prugressBur').value = prediction;
+            if (prediction < 25) {
+                document.getElementById('prugressBur').className = "progress is-success is-large";
+            } else if (prediction > 75) {
+                document.getElementById('prugressBur').className = "progress is-warning is-large";
+            } else {
+                document.getElementById('prugressBur').className = "progress is-danger is-large";
+            }
+            
           });
 
     });
