@@ -1,7 +1,9 @@
 $(document).ready(function(){
 
     $('#submitButton').click(function(){
-        console.log("submitttt");
+        console.log(document.getElementById('card1').innerHTML);
+
+        
 
     });
 
