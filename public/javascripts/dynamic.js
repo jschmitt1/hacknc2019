@@ -31,6 +31,38 @@ $(document).ready(function(){
             document.getElementById('day').value = 2;
             document.getElementById('decimal').value = 0;
     });
+    function handleClick() {
+        document.getElementById('card1').value = 6019;
+        document.getElementById('card2').value = 583;
+        document.getElementById('card3').value = 150;
+        document.getElementById('card5').value = 226;
+        document.getElementById('transactionAmount').value = 947;
+        document.getElementById('transactionDate').value = 18552011;
+        document.getElementById('address').value = 264;
+        document.getElementById('distance1').value = 682;
+        document.getElementById('distance2').value = 0;
+        document.getElementById('d4').value = 6;
+        document.getElementById('d2').value = 6;
+        document.getElementById('d10').value = 6;
+        document.getElementById('d8').value = 0;
+        document.getElementById('d1').value = 6;
+        document.getElementById('d9').value = 0;
+        document.getElementById('c13').value = 1;
+        document.getElementById('c1').value = 1;
+        document.getElementById('c2').value = 1;
+        document.getElementById('c4').value = 0.0;
+        document.getElementById('c5').value = 0.0;
+        document.getElementById('c6').value = 1;
+        document.getElementById('c7').value = 0.0;
+        document.getElementById('c8').value = 0.0;
+        document.getElementById('c9').value = 1;
+        document.getElementById('c10').value = 0.0;
+        document.getElementById('c11').value = 1;
+        document.getElementById('c12').value = 1;
+        document.getElementById('hour').value = 23;
+        document.getElementById('day').value = 2;
+        document.getElementById('decimal').value = 0;
+    }
     $('#submitButton').click(function(){
         console.log(document.getElementById('checked12').checked);
 
