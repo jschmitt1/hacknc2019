@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>  
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Predicting Fraud</title>
+        <link rel="stylesheet" href="node_modules/bulma/css/bulma.css"/>
+        <link rel="stylesheet" href="/stylesheets/styles.css"/>
+    </head>
+    <body>
+        <section class="hero is-dark is-medium" id="background">
+            <div class="hero-body">
+                <div class="container">
+                    <h1 class="title" id="mainTitle">
+                        Predicting Transaction Fraud
+                    </h1>
+                    <h2 class="subtitle" id="mainSubtitle">
+                        Using a machine learning model to analyze transaction data and predict potential fraud
+                    </h2>
+                </div>
+            </div>
+        </section>
+        
+        
+        <section class="section has-background-light">
+            <div class="container">
+                <h1 class="title" id="testTitle">
+                    Model Testing
+                </h1>
+                <h2 class="subtitle has-text-grey" id="testSubtitle">
+                    Implementing a gradient boosting model in transaction analysis
+                </h2>
+                <div class="box has-background-white is-shadowless">
+                    <div class="content" id="inputTitle">
+                        <div class="columns is-multiline justify-center">
+                            <div class="column">
+                                <p>Card 1</p>
+                                <input class="input is-rounded" type="text" placeholder="ex: 123">
+                            </div>
+                            <div class="column">
+                                <p>Card 2</p>
+                                <input class="input is-rounded" type="text" placeholder="ex: 123">
+                            </div>
+                            <div class="column">
+                                <p>Card 3</p>
+                                <input class="input is-rounded" type="text" placeholder="ex: 123">
+                            </div>
+                        </div>
+                        <div class="columns is-multiline justify-center">
+                            <div class="column">
+                                <p>Card 4</p>
+                                <input class="input is-rounded" type="text" placeholder="ex: 123">
+                            </div>
+                            <div class="column">
+                                <p>Transaction Amount</p>
+                                <input class="input is-rounded" type="text" placeholder="ex: $125.23">
+                            </div>
+                            <div class="column">
+                                <p>Transaction A</p>
+                                <input class="input is-rounded" type="text">
+                            </div>
+                        </div>
+                        <div class="columns is-multiline justify-center">
+                            <div class="column">
+                                <p>Transaction Date</p>
+                                <input class="input is-rounded" type="text">
+                            </div>
+                            <div class="column">
+                                <p>Address</p>
+                                <input class="input is-rounded" type="text">
+                            </div>
+                            <div class="column">
+                                <p>Distance 1</p>
+                                <input class="input is-rounded" type="text">
+                            </div>
+                        </div>
+                        <div class="columns is-multiline justify-center">
+                            <div class="column">
+                                <p>Distance 2</p>
+                                <input class="input is-rounded" type="text">
+                            </div>
+                            <div class="column">
+                                <p>D4</p>
+                                <input class="input is-rounded" type="text">
+                            </div>
+                            <div class="column">
+                                <p>D2</p>
+                                <input class="input is-rounded" type="text">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="control">
+                    <div class="field is-grouped is-grouped-centered">
+                        <p class="control">
+                            <button class="button is-dark is-rounded is-large" id="submitButton">
+                                Submit
+                            </button>
+                        </p>
+                    </div>
+                </div>
+                <br>
+                <div class="section" id="modelOutput">
+                    <p class="title has-text-centered" id="testTitle">Potential Fraud</p>
+                    <progress class="progress is-warning is-large" value="52.3" max="100"></progress>
+                    <p class="subtitle has-text-grey has-text-centered" id="detectionSubtitle">Based on the model, the transaction has predicted fraud with 86.3% confidence.</p>
+                </div>
+            </div>
+        </section>
+        
+        
+        
+        <section class="section has-background-white">
+            <div class="container">
+                <h1 class="title" id="testTitle">
+                        Analysis
+                </h1>
+                <h2 class="subtitle has-text-grey" id="testSubtitle">
+                    The data used to create this model came from Kaggle.com
+                </h2>
+            </div>
+            <br>
+            <div class="columns is-multiline justify-center">
+                <div class="column">
+                    <div class="box has-background-light is-shadowless">
+                        <p class="title has-text-centered" id="boxTitle">Accuracy</p>
+                        <p2>What the</p2>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="box has-background-light is-shadowless">
+                        <p class="title has-text-centered" id="boxTitle">Features</p>
+                        <figure class="image">
+                            <img src="Images/feature_importance.png">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <div class="columns is-multiline justify-center">
+                <div class="column">
+                    <div class="box has-background-light is-shadowless">
+                        <p class="title  has-text-centered" id="boxTitle">Engineered Features</p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="box has-background-light is-shadowless">
+                        <p class="title  has-text-centered" id="boxTitle">Engineered Features</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section has-background-white">
+            <div class="container">
+                 <h1 class="title has-text-dark" id="testTitle">
+                    Next Steps
+                </h1>
+                <div class="container">
+                    <div class="box is-shadowless" id="list">
+                        <article class="media">
+                            <div class="media-left">
+                                <figure class="image is-64x64">
+                                    <img src="https://visualpharm.com/assets/886/Number%201-595b40b75ba036ed117d784f.svg" alt="Image">
+                                </figure>
+                            </div>
+                        <div class="media-content">
+                            <div class="content">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. 
+                                </p>
+                            </div>
+                        </div>
+                        </article>
+                    </div>
+                     <div class="box is-shadowless" id="list">
+                        <article class="media">
+                            <div class="media-left">
+                                <figure class="image is-64x64">
+                                    <img src="https://visualpharm.com/assets/674/Number%202-595b40b75ba036ed117d785a.svg" alt="Image">
+                                </figure>
+                            </div>
+                        <div class="media-content">
+                            <div class="content">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. 
+                                </p>
+                            </div>
+                        </div>
+                        </article>
+                    </div>
+                    <div class="box is-shadowless" id="list">
+                        <article class="media">
+                            <div class="media-left">
+                                <figure class="image is-64x64">
+                                    <img src="https://visualpharm.com/assets/450/3%20C-595b40b75ba036ed117d7863.svg" alt="Image">
+                                </figure>
+                            </div>
+                        <div class="media-content">
+                            <div class="content">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. 
+                                </p>
+                            </div>
+                        </div>
+                        </article>
+                    </div>
+                    <div class="box is-shadowless" id="list">
+                        <article class="media">
+                            <div class="media-left">
+                                <figure class="image is-64x64">
+                                    <img src="https://visualpharm.com/assets/113/Number%204-595b40b75ba036ed117d786a.svg" alt="Image">
+                                </figure>
+                            </div>
+                        <div class="media-content">
+                            <div class="content">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. 
+                                </p>
+                            </div>
+                        </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section has-background-light">
+            <div class="container">
+                <h1 class="title has-text-dark" id="testTitle">
+                    Project Info
+                </h1>
+                <p id="bottomSubtitle" class="has-text-centered has-text-dark"><p2 class="has-text-weight-bold">Created by</p2> Nick Egnatz and Justin Schmitt</p>
+                <br>
+                <div class="columns is-multiline justify-center">
+                    <div class="column is-one-third is-centered">
+                        <a class="is-centered" href="https://www.github.com/jschmitt1/hacknc2019" target="_blank"><img id="githubImage" class="image bottom-image" height="140" width="140" src="Images/github.png"></a>
+                    </div>
+                    <div class="column is-one-third is-centered">
+                        <a class="is-centered" href="https://bulma.io/" target="_blank"><img class="image bottom-image" src="Images/bulma.png"></a>
+                    </div>
+                    <div class="column is-one-third is-centered">
+                        <a class="is-centered" href="https://mlh.io/" target="_blank"><img class="image is-centered bottom-image" src="Images/majorLeagueHacking.png" height="160" width="300"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

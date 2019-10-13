@@ -6,7 +6,7 @@ const ps = require('python-shell');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('index.html');
 });
 
 router.post('/predict', function(req, res) {
