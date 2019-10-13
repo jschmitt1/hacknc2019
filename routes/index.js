@@ -6,7 +6,7 @@ const ps = require('python-shell');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.sendFile('/index.html');
+  res.sendFile('/opt/bitnami/apps/hacknc2019/views/index.html');
 });
 
 router.post('/predict', function(req, res) {
