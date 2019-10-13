@@ -11,7 +11,7 @@ $(document).ready(function(){
             "TransactionAmt":160.5,
             "TransactionDT":129512,
             "addr1":420,
-            "dist1":0,
+            "dist1":"",
             "dist2":0,
             "D4":456,
             "D2":395,
