@@ -34,7 +34,8 @@ $(document).ready(function(){
         }
 
         $.post("predict", message, function(result){
-            console.log((parseFloat(result[0].substring(1).substring(0,result[0].length-2)) * 100).toFixed(2));
+            var prediction = (parseFloat(result[0].substring(1).substring(0,result[0].length-2)) * 100).toFixed(2);
+            document.getElementById('progressBar').value = prediction;
           });
 
     });
