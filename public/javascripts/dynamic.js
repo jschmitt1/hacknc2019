@@ -3,7 +3,7 @@ $(document).ready(function(){
     $('#submitButton').click(function(){
         console.log(document.getElementById('card1').value);
 
-        var message = {
+        var messageFraud = {
             "card1":6019,
             "card2":583,
             "card3":150,
@@ -30,10 +30,13 @@ $(document).ready(function(){
             "C9":1,
             "C10":0.0,
             "C11":1,
-            "C12":1
+            "C12":1,
+            "hour":23,
+            "day":2,
+            "decimal":0
         }
 
-        $.post("predict", message, function(result){
+        $.post("predict", messageFraud, function(result){
             var prediction = (parseFloat(result[0].substring(1).substring(0,result[0].length-2)) * 100).toFixed(2);
             
             document.getElementById('prugressBur').value = prediction;

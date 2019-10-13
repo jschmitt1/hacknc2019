@@ -2,7 +2,7 @@ import sys
 import pandas as pd
 import lightgbm as lgb
 
-model = lgb.Booster(model_file='/opt/bitnami/apps/hacknc2019/routes/fraud-model.txt')
+model = lgb.Booster(model_file='/opt/bitnami/apps/hacknc2019/routes/fraud-model1.txt')
 
 df = pd.DataFrame()
 # df['card1'] = [2755]
@@ -61,6 +61,9 @@ df['C9'] = [float(sys.argv[24])]
 df['C10'] = [float(sys.argv[25])]
 df['C11'] = [float(sys.argv[26])]
 df['C12'] = [float(sys.argv[27])]
+df['hour'] = [float(sys.argv[28])]
+df['day'] = [float(sys.argv[29])]
+df['decimal'] = [float(sys.argv[30])]
 
 
 
