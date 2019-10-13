@@ -1,8 +1,7 @@
 $(document).ready(function(){
 
     $('#submitButton').click(function(){
-        console.log(document.getElementById('card1').value);
-
+        console.log(document.getElementById('checked12').checked);
         var messageFraud = {
             "card1":6019,
             "card2":583,
