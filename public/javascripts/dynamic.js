@@ -44,6 +44,7 @@ $(document).ready(function(){
             } else {
                 document.getElementById('prugressBur').className = "progress is-danger is-large";
             }
+            document.getElementById('detectionSubtitle') = `Based on the model, the transaction has an estimated ${prediction}% chance of being fraudulent.`;
             
           });
 
