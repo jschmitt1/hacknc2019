@@ -37,11 +37,11 @@ $(document).ready(function(){
             var prediction = (parseFloat(result[0].substring(1).substring(0,result[0].length-2)) * 100).toFixed(2);
             var currentVal = document.getElementById('prugressBur').value
             if (currentVal > prediction) {
-                while(currentVal > prediction) {
+                while(document.getElementById('prugressBur').value > prediction) {
                     document.getElementById('prugressBur').value = parseFloat(document.getElementById('prugressBur').value) - 0.01;
                 }
             } else {
-                while(currentVal < prediction) {
+                while(document.getElementById('prugressBur').value < prediction) {
                     document.getElementById('prugressBur').value = parseFloat(document.getElementById('prugressBur').value) + 0.01;
                 }
             }
