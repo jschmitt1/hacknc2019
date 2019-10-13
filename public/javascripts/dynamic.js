@@ -33,7 +33,7 @@ $(document).ready(function(){
             "C12":0.0
         }
 
-        $.post("index.js", message, function(result){
+        $.post("predict", message, function(result){
             console.log(result);
           });
 
